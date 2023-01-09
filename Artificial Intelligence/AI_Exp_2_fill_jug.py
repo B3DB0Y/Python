@@ -64,7 +64,7 @@ def apply_rule(ch, x, y):
     if ch == 6:
       # jug 2 should not be empty and jug 1 + jug 2 should be more then or equal to capacity of jug 1 
       if y > 0 and x+y >= j1:
-        return x-(j1-x), j1
+        return  j1,x-(j1-x)
       else:
         print("Rule cannot be applier")
         return x,y
